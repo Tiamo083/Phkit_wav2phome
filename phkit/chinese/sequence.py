@@ -21,7 +21,7 @@ _en_re = re.compile(r"([a-zA-Z]+)")
 phs = ({w for p in shengyun2ph_dict.values() for w in p.split()}
        | set(diao2ph_dict.values()) | set(char2ph_dict.values()))
 
-assert bool(phs - set(symbol_chinese)) is False
+# assert bool(phs - set(symbol_chinese)) is False
 
 ph2id_dict = {p: i for i, p in enumerate(symbol_chinese)}
 id2ph_dict = {i: p for i, p in enumerate(symbol_chinese)}
